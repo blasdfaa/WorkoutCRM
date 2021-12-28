@@ -1,9 +1,11 @@
 import React from 'react'
+import MainLayout from './layouts/MainLayout'
+
 
 export const App = () => {
   return (
-    <div>
-      
-    </div>
+    <MainLayout>
+      Hello
+    </MainLayout>
   )
 }
