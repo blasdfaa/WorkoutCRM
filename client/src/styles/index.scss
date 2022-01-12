@@ -1,3 +1,61 @@
-@import "vars.scss";
-@import "navbar.scss";
 @import "sidebar.scss";
+@import "navbar.scss";
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-link {
+  color: #0070f3;
+}
+
+/* Max-width будет равен 10% от 1400px */
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+
+/* Max-width будет равен 20% от 1200px */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Max-width будет равен 25-27.5% от 996px */
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Max-width будет равен 30% от 1400px */
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
