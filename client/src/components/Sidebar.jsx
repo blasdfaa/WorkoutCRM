@@ -1,16 +1,22 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { sidebarList } from "../utils/linkList";
 
 const Sidebar = () => {
   return (
     <aside className="sidebar">
       <ul className="sidebar-list">
-        <li className="sidebar-list-item active-link">Создать тренировку</li>
-        <li className="sidebar-list-item">Виды тренировок</li>
-        <li className="sidebar-list-item">Готовые тренировки</li>
-        <li className="sidebar-list-item">Расписание</li>
-        <li className="sidebar-list-item">Антропометрия</li>
-        <li className="sidebar-list-item">Цели</li>
-        <li className="sidebar-list-item">Виды упражнений</li>
+        {sidebarList.map((link) => (
+          <li className="sidebar-list-item">
+            <NavLink
+              className="link"
+              to={link.to}
+              activeClassName="active-link"
+            >
+              {link.name}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </aside>
   );

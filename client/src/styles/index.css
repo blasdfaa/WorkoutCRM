@@ -10,8 +10,25 @@ body {
   margin: 0 auto;
 }
 
-.active-link{
-  color: #0070f3; 
+.content {
+  width: 75%;
+  margin-left: 25%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.link:hover {
+  color: #0070f3;
+}
+
+.active-link {
+  text-decoration: none;
+  color: #0070f3;
 }
 
 /* Max-width будет равен 10% от 1400px */
