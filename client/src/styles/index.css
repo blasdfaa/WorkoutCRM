@@ -7,11 +7,10 @@ body {
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .content {
-  width: 75%;
   margin-left: 25%;
 }
 

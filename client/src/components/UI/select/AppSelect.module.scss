@@ -1,0 +1,15 @@
+.app_select {
+  appearance: none;
+  width: 100%;
+  border: 2px solid #292d3e;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: 10px;
+
+  &::-ms-expand {
+    display: none;
+  }
+}

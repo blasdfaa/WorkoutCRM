@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Form from "../components/CreateWorkout/Form/Form";
 
 const CreateWorkout = () => {
-    return (
-        <div>
-            Hello
-        </div>
-    )
-}
+  return (
+    <section className="container">
+      <h2 className="page-header">Создать тренировку</h2>
+      <Form/>
+    </section>
+  );
+};
 
-export default CreateWorkout
+export default CreateWorkout;
