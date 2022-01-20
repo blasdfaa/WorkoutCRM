@@ -9,7 +9,7 @@ WorkoutCRM - это платформа для спортсменов и трен
 ## Технологический стэк:
 + Frontend:
 +     React
-+     Redux
++     Mobx
 +     SCSS
 + Backend:
 +     Python
