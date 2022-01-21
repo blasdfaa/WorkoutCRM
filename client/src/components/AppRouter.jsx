@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
-import { routes } from "../routes";
+import { AuthContext } from "../context";
+import { authRoutes, routes } from "../routes";
 
 const AppRouter = () => {
-  return (
+  const { isAuth } = useContext(AuthContext);
+
+  return isAuth ? (
     <Switch>
       {routes.map((route) => (
         <Route
@@ -14,6 +17,18 @@ const AppRouter = () => {
         />
       ))}
       <Redirect to="/" />
+    </Switch>
+  ) : (
+    <Switch>
+      {authRoutes.map((route) => (
+        <Route
+          path={route.path}
+          component={route.component}
+          exact={route.exact}
+          key={route.path}
+        />
+      ))}
+      <Redirect to="/login" />
     </Switch>
   );
 };

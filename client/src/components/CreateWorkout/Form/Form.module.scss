@@ -2,18 +2,33 @@
   width: 100%;
   display: flex;
   align-items: center;
+  padding: 20px 0;
 }
 
-.input_control {
+.list_group {
   margin-right: 80px;
 }
 
-.select_control{
+.input_control {
+  margin-right: 100px;
+}
+
+.select_control {
   display: flex;
   flex-direction: column;
 }
 
-.add_exercise{
+.add_exercise {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.calculate {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px 0;
+  padding-right: 10px;
+  outline: none;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import classes from "./AppSelect.module.scss";
 
 const AppSelect = ({ options, defaultValue, value, onChange }) => {
@@ -18,6 +19,13 @@ const AppSelect = ({ options, defaultValue, value, onChange }) => {
       ))}
     </select>
   );
+};
+
+AppSelect.propTypes = {
+  options: PropTypes.array,
+  defaultValue: PropTypes.string,
+  value: PropTypes.any,
+  onChange: PropTypes.func,
 };
 
 export default AppSelect;

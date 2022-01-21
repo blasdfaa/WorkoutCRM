@@ -1,0 +1,15 @@
+.item_list{
+    margin-top: 20px;
+}
+
+.item{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+}

@@ -1,0 +1,54 @@
+.register {
+  width: 70%;
+  margin-top: 15%;
+  text-align: center;
+  border: 5px solid $layout-bg;
+  padding: 40px;
+  border-radius: 10px;
+
+  h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+}
+
+.input-control {
+  margin-right: 45px;
+}
+
+.input-list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-check {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.label-check {
+  font-size: 20px;
+}
+
+.register-redirect {
+  position: fixed;
+  bottom: 25px;
+  left: 43%;
+}
+
+.register-link {
+  color: $element;
+
+  &:hover {
+    color: $element-dk;
+  }
+}

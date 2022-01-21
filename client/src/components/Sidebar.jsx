@@ -7,7 +7,7 @@ const Sidebar = () => {
     <aside className="sidebar">
       <ul className="sidebar-list">
         {sidebarList.map((link) => (
-          <li className="sidebar-list-item">
+          <li className="sidebar-list-item" key={link.to}>
             <NavLink
               className="link"
               to={link.to}

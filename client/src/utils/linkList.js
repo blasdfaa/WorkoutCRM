@@ -20,12 +20,12 @@ export const sidebarList = [
   },
   {
     name: "Виды тренировок",
-    to: "/workout/kinds",
+    to: "/workout/types",
     icon: <MdAccountTree />,
   },
   {
     name: "Виды упражнений",
-    to: "/exercises/kinds",
+    to: "/exercises/types",
     icon: <MdFitnessCenter />,
   },
   {
