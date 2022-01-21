@@ -14,7 +14,7 @@ WorkoutCRM - это платформа для спортсменов и трен
 +     SCSS
 + Backend:
 +     Python
-+     Flask/Fast API
++     Flask
 +     MySQL
 +     Swagger
 + Server:
@@ -25,5 +25,5 @@ WorkoutCRM - это платформа для спортсменов и трен
 **Список может меняться со временем!**
 
 Также проект разделен на два репозитория и два разных аккаунта. Т.к. я веду разработку не один. 
-Я занимаюсь frontend частью проекта, мой коллега backend.
+Я занимаюсь frontend частью проекта, мой коллега backend: https://github.com/farrris/WorkoutCRM
 
